@@ -1,0 +1,136 @@
+.main {
+  width: 100%;
+  max-width: 100%;
+  background-color: #000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 32px;
+  min-height: 473px; }
+
+.slider {
+  width: 100%;
+  max-width: 100%;
+  position: relative; }
+
+.slide {
+  display: none;
+  padding-left: 70px;
+  padding-top: 70px;
+  width: 100%;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .slide .slide-text {
+    z-index: 3; }
+  .slide #first-slide-title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 54px;
+    max-width: 500px;
+    margin: 0;
+    margin-bottom: 32px; }
+  .slide .slide-description {
+    color: white;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    margin-bottom: 24px; }
+  .slide .slider-button-submit {
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 40px;
+    background-color: #ff9514;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    .slide .slider-button-submit:hover {
+      background-color: black;
+      border: none;
+      color: white; }
+    .slide .slider-button-submit:active {
+      background-color: #ff9514; }
+  .slide .slide-img {
+    width: 700px;
+    height: 400px;
+    background: url(../img/car.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+.slide.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.slider-dots {
+  position: absolute;
+  bottom: 44px;
+  left: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 99; }
+  .slider-dots .slider-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.4;
+    margin: 9px; }
+  .slider-dots .slider-dot.active {
+    height: 12px;
+    width: 12px;
+    opacity: 1; }
+
+.slider-arrows {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 44px;
+  right: 44px;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .slider-arrows .slider-arrow-prev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid white;
+    opacity: 0.4;
+    margin-right: 16px;
+    cursor: pointer; }
+  .slider-arrows .slider-arrow-next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer; }

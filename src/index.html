@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>LeasingCar</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/normalize.css">
-  <title>LeasingCar</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <header class="header">
@@ -17,9 +18,14 @@
       <span class="logo-text">лизинговая компания</span>
     </div>
     <nav class="header-nav">
-      <a href="" class="header-link">
+      <a href="" class="header-link dropdown-toggle">
         Лизинг
       </a>
+      <div class="drop-down">
+        <a href="#" class="dropdown-link">Для личного пользования</a>
+        <a href="#" class="dropdown-link">Для юридических лиц</a>
+        <a href="#" class="dropdown-link">Калькулятор</a>
+      </div>
       <a href="#" class="header-link">
         Каталог
       </a>
@@ -29,6 +35,74 @@
     </nav>
     <button class="button-submit">Оставить заявку</button>
   </header>
-  <script src="scripts/scripts.js"></script>
+  <main class="main">
+    <div class="slider">
+      <div class="slide active">
+        <div class="slide-text">
+          <h1 id="first-slide-title">Авто в лизинг для физических лиц</h1>
+          <h3 class="slide-description">Получите машину за 5 дней</h3>
+          <button class="slider-button-submit">Оставить заявку</button>
+        </div>
+        <div class="slide-img"></div>
+      </div>
+      <div class="slide ">
+        <div class="slide-text">
+          <h1 id="first-slide-title">Авто в лизинг для физических лиц</h1>
+          <h3 class="slide-description">Получите машину за 5 дней</h3>
+          <button class="slider-button-submit">Оставить заявку</button>
+        </div>
+        <div class="slide-img"></div>
+      </div>
+      <div class="slide ">
+        <div class="slide-text">
+          <h1 id="first-slide-title">Авто в лизинг для физических лиц</h1>
+          <h3 class="slide-description">Получите машину за 5 дней</h3>
+          <button class="slider-button-submit">Оставить заявку</button>
+        </div>
+        <div class="slide-img"></div>
+      </div>
+      <div class="slide ">
+        <div class="slide-text">
+          <h1 id="first-slide-title">Авто в лизинг для физических лиц</h1>
+          <h3 class="slide-description">Получите машину за 5 дней</h3>
+          <button class="slider-button-submit">Оставить заявку</button>
+        </div>
+        <div class="slide-img"></div>
+      </div>
+      <div class="slide ">
+        <div class="slide-text">
+          <h1 id="first-slide-title">Авто в лизинг для физических лиц</h1>
+          <h3 class="slide-description">Получите машину за 5 дней</h3>
+          <button class="slider-button-submit">Оставить заявку</button>
+        </div>
+        <div class="slide-img"></div>
+      </div>
+      <div class="slide ">
+        <div class="slide-text">
+          <h1 id="first-slide-title">Авто в лизинг для физических лиц</h1>
+          <h3 class="slide-description">Получите машину за 5 дней</h3>
+          <button class="slider-button-submit">Оставить заявку</button>
+        </div>
+        <div class="slide-img"></div>
+      </div>
+      <div class="slider-dots">
+        <div class="slider-dot"></div>
+        <div class="slider-dot active"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+      </div>
+      <div class="slider-arrows">
+        <div class="slider-arrow-prev">
+          <img src="./img/arrow-prev.svg" alt="">
+        </div>
+        <div class="slider-arrow-next">
+          <img src="./img/arrow-next.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
