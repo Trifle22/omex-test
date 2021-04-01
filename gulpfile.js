@@ -49,7 +49,7 @@ gulp.task('code', function() {
 
 gulp.task('css-min', function() {
 	return gulp.src(
-    'src/sass/style.scss'
+    'src/sass/header.scss'
     ) // Выбираем файл для минификации
 		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(cssnano()) // Сжимаем
