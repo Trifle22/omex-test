@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/calculator.css">
+  <link rel="stylesheet" href="./css/popup.css">
 </head>
 <body>
   <header class="header">
@@ -103,6 +105,80 @@
       </div>
     </div>
   </main>
+  <section class="calculator">
+    <h2 class="calculator-title">Рассчитайте стоимость автомобиля в лизинг</h2>
+    <div class="calc-inputs">
+      <div class="calc-input">
+        <label for="car-price">Стоимость автомобиля</label>
+        <input type="text" class="calc-input--input" name="car-price" id="car-price" placeholder="₽">
+      </div>
+      <div class="calc-input">
+        <label for="contribution">Первоначальный взнос</label>
+        <input type="text" class="calc-input--input" name="contribution" id="contribution" placeholder="13%">
+      </div>
+      <div class="calc-input">
+        <label for="leasing-time">Срок лизинга</label>
+        <input type="text" class="calc-input--input" name="leasing-time" id="leasing-time"
+        placeholder="мес.">
+      </div>
+    </div>
+    <div class="calc-total">
+      <div class="calc-total-summ">
+        <span class="total-text">
+          Сумма договора лизинга
+        </span>
+        <input class="total-summ" disabled value="4 467 313 ₽">
+      </div>
+      <div class="calc-total-summ">
+        <span class="total-text">
+          Ежемесяный платеж от
+        </span>
+        <input class="total-summ" disabled value="114 455 ₽">
+      </div>
+      <div class="calc-total-summ">
+        <button class="calc-button-submit">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="popup-shim">
+    <div class="popup">
+      <div class="popup-close-div">
+        <button class="popup-close">
+          <img src="./img/popup-close.svg" alt="popup-close">
+        </button>
+      </div>
+      <div class="popup-main">
+        <h2 class="popup-title">Онлайн-заявка</h2>
+        <p class="popup-description">
+          Заполните форму, и мы вскоре свяжемся с вами, чтобы ответить на все вопросы
+        </p>
+        <form action="#" id="popup-form">
+          <div class="inputs">
+            <input type="tel" class="tel" placeholder="Телефон" name="tel">
+            <input type="text" class="name" placeholder="Имя" name="name">
+          </div>
+          <div class="submit-block">
+            <p class="submit-text">
+              Нажимая на кнопку "Оставить заявку", я даю согласие <a href="#">на обработку персональных данных</a>
+            </p>
+            <button class="button-popup-submit">Оставить заявку</button>
+          </div>
+          <div class="socials-block">
+            <a href="#" class="socials-link">
+              <img src="./img/icon-whatsapp.svg" alt="whatsapp">
+            </a>
+            <a href="#" class="socials-link">
+              <img src="./img/icon-telegram.svg" alt="telegram">
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <script src="./scripts/script.js"></script>
 </body>
 </html>
