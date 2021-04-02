@@ -7,6 +7,16 @@
   min-height: 473px;
   margin-bottom: 100px;
 }
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
 .slider {
   width: 100%;
   max-width: 100%;
@@ -74,7 +84,9 @@
 }
 .slide.active {
   display: flex;
+  animation: fadeSlide 0.5s ease-in-out;
 }
+
 .slider-dots {
   position: absolute;
   bottom: 44px;
@@ -90,11 +102,14 @@
     background-color: white;
     opacity: 0.4;
     margin: 9px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
   }
   .slider-dot.active {
     height: 12px;
     width: 12px;
     opacity: 1;
+    animation: fadeSlide 0.5s ease-in-out;
   }
 }
 .slider-arrows {

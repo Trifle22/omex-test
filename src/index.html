@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="./css/calculator.css">
   <link rel="stylesheet" href="./css/popup.css">
 </head>
-<body>
+<body class="lock">
   <header class="header">
     <div class="logo-block">
       <a href="#" class="logo">
-        <img src="./img/logo.svg" alt="">
+        <img src="./img/logo.svg" alt="logo">
       </a>      
       <span class="logo-text">лизинговая компания</span>
     </div>
@@ -36,7 +36,28 @@
       </a>
     </nav>
     <button class="button-submit">Оставить заявку</button>
+    <div class="burger-menu-button">
+      <span></span>
+    </div>
   </header>
+  <div class="mobile-shim">
+    <div class="mobile-menu">
+      <div class="mobile-menu--close">
+        <button class="mobile-menu--close--button">
+          <img src="./img/mobile-menu-close.svg" alt="close">
+        </button>
+      </div>
+        <nav class="mobile-nav">
+          <a href="#" class="mobile-link">Лизинг</a>
+          <a href="#" class="mobile-link">Каталог</a>
+          <a href="#" class="mobile-link">О нас</a>
+        </nav>
+        <button class="mobile-menu--submit">
+          Оставить заявку
+        </button>
+    </div>
+  </div>
+
   <main class="main">
     <div class="slider">
       <div class="slide active">
@@ -57,7 +78,7 @@
       </div>
       <div class="slide ">
         <div class="slide-text">
-          <h1 id="first-slide-title">Авто в лизинг для физических лиц</h1>
+          <h1 id="first-slide-title">Авто в лизинг для юридических лиц</h1>
           <h3 class="slide-description">Получите машину за 5 дней</h3>
           <button class="slider-button-submit">Оставить заявку</button>
         </div>
@@ -96,10 +117,10 @@
         <div class="slider-dot"></div>
       </div>
       <div class="slider-arrows">
-        <div class="slider-arrow-prev">
+        <div class="slider-arrow slider-arrow-prev">
           <img src="./img/arrow-prev.svg" alt="">
         </div>
-        <div class="slider-arrow-next">
+        <div class="slider-arrow slider-arrow-next">
           <img src="./img/arrow-next.svg" alt="">
         </div>
       </div>
