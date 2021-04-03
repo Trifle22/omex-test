@@ -5,6 +5,7 @@ const popup = document.querySelector('.popup');
 const burgerMenuButton = document.querySelector('.burger-menu-button');
 const mobileShim = document.querySelector('.mobile-shim');
 const mobileMenu = document.querySelector('.mobile-menu');
+const logoImg = document.querySelector('.logo--img');
 
 
 //dropdown
@@ -33,13 +34,21 @@ document.addEventListener('click', (event) => {
     document.body.classList.add('lock');
   }
   if ((target.closest('.mobile-menu--close--button') || 
-  target.matches('.mobile-link') || 
-  target.matches('.mobile-menu--submit')) && 
+  target.matches('.mobile-link')) && 
   mobileShim.classList.contains('active') && 
   mobileMenu.classList.contains('active')) {
     mobileShim.classList.remove('active');
     mobileMenu.classList.remove('active');
     document.body.classList.remove('lock');
+  } else if (target.matches('.mobile-menu--submit') && 
+  mobileShim.classList.contains('active') && 
+  mobileMenu.classList.contains('active')) {
+    mobileShim.classList.remove('active');
+    mobileMenu.classList.remove('active');
+    document.body.classList.remove('lock');
+    popupShim.classList.add('active');
+    popup.classList.add('active');
+    document.body.classList.add('lock');
   }
 });
 
@@ -125,3 +134,7 @@ const slider = () => {
 }
 
 slider();
+
+if (document.documentElement.clientWidth < 576) {
+  logoImg.src = '../img/mobile-logo.svg';
+}

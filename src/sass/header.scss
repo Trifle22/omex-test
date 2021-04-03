@@ -193,18 +193,6 @@ body {
 
 
 
-@media (max-width: 1024px) {
-  .burger-menu-button {
-    display: flex;
-  }
-  .header-nav {
-    display: none;
-  }
-  .button-submit {
-    display: none;
-  }
-}
-
 @keyframes fadeMobileShim {
   0% {
     opacity: 0
@@ -218,6 +206,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .burger-menu-button {
+    display: flex;
+  }
+  .header-nav {
+    display: none;
+  }
+  .button-submit {
+    display: none;
+  }
+
   .mobile-shim {
     position: fixed;
     top: 0;
@@ -329,7 +327,7 @@ body {
     padding: 0 0px;
   }
   .header {
-    background-color: #111;
+    background-color: #000;
     padding: 20px 20px;
   }
   .burger-menu-button {
